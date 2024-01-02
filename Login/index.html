@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <form class="mi-form">
+      <div class="login-bienvenido">
+        <a href="#" title="Logo">
+          <img src="" alt="Logo" title="Logo" />
+        </a>
+        <h1>Bienvenido &#x1f44f;</h1>
+        <p>Por favor ingrese los detalles</p>
+      </div>
+
+      <div class="input_primario">
+        <input
+          type="email"
+          id="email"
+          class="input_campo"
+          placeholder="Tu email"
+          required
+        />
+
+        <label for="email" class="input_label">Email:</label>
+      </div>
+      <div class="input_primario">
+        <input
+          id="contraseña"
+          type="password"
+          at
+          least
+          1
+          alphabet
+          and
+          1
+          number
+          class="input_campo"
+          placeholder="Ingresa tu contraseña"
+          title="Minimo 6 caracteres al menos 1 alfabeto y 1 número"
+          pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+          required
+        />
+        <label for="password" class="input_label"> Contraseña </label>
+      </div>
+
+      <button type="submit" class="form_boton">Inicia Sesión</button>
+
+      <div class="redes_sociales">
+        <a href="#" title="Use Google">
+          <img src="#" alt="Google" />Inicia sesión por Google
+        </a>
+      </div>
+
+      <div class="form_acciones">
+        <div class="form_fila">
+          <span>No tengo una cuenta</span>
+          <a href="#" title="Crear cuenta">Registrate</a>
+        </div>
+      </div>
+    </form>
+    <script src="codigo.js"></script>
+  </body>
+</html>

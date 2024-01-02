@@ -1,0 +1,220 @@
+:root{
+  --primary: #605DFF;
+  --primary-dark: #4a00e0;
+  --primary-light: #5DA8FF;
+  --secondary: #1d1d1d;
+  --social-background: #e9e9e9;
+  --social-background-hover: #dddddd;
+  --white: #ffffff;
+  --text: #1f2346;
+  --violet: #8e2de2;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    height: 100vh;
+    padding: 1rem;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: var(--violet);
+    background: -webkit-linear-gradient(
+        to right, var(--violet),
+        var(--primary-dark)
+    );
+    background: linear-gradient(
+        to right, var(--violet),
+        var(--primary-dark)
+    );
+}
+
+.redes_sociales{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.redes_sociales img{
+    width: 24px;
+    height: 24px;
+}
+
+.redes_sociales>a{
+    padding: 8px;
+    border-radius: 99px;
+    width: 100%;
+    min-height: 48px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--text);
+    padding: 8px;
+    background-color: var(--social-background);
+    font-weight: 700;
+}
+
+.redes_sociales>a:hover{
+    background-color: var(--social-background-hover);
+}
+
+.login-bienvenido{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.logo{
+    height: 48px;
+    margin: 0 auto;
+}
+
+.mi-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+    gap: 1rem;
+    background-color: var(--white);
+    width: 100%;
+    max-width: 32rem;
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    height: fit-content;
+}
+
+.form_boton{
+    background-color: var(--primary);
+    color: white;
+    white-space: nowrap;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    line-height: 50px;
+    outline: none;
+    font-size: 18px;
+    letter-spacing: .025rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 800;
+    min-height: 50px;
+    width: 100%;
+    border-radius: 99px;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+
+.form_boton:hover{
+    background-color: var(--primary-dark);
+}
+/*input primario*/
+
+.input_primario{
+    position: relative;
+    padding: 15px 0 0;
+    margin-bottom: 0.5rem;
+}
+
+.input_campo{
+    font-size: 1.5rem;
+    color: var(--text);
+    padding: 6px 0px;
+    padding-right: 32px;
+    padding-bottom: 8px;
+    line-height: 2rem;
+    height: 2rem;
+    outline: 0px;
+    border: 0px;
+    width: 100%;
+    vertical-align: middle;
+    padding-bottom: 0.7rem;
+    border-bottom: 3px solid var(--secondary);
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.input_campo::placeholder{
+    color: transparent;
+}
+
+.input_label{
+    user-select: none;
+}
+
+.input_campo:placeholder-shown-.input_label{
+    cursor: text;
+    color: var(--text);
+    top: 0.8rem;
+    font-size: 1.2rem;
+
+}
+
+.input_label,
+.input_campo:focus-.input_label{
+    position: absolute;
+    top: -0.8rem;
+    display: black;
+    font-size: 1.2rem;
+    color: var(--text);
+    transition: 0.3s;
+}
+
+.input_campo:focus-.input_label{
+    border-bottom: 3px solid var(--primary);
+}
+
+.input_campo:focus-svg{
+    stroke: var(--primary);
+}
+
+.input_icon{
+    position: absolute;
+    right: -14px;
+    bottom: -11px;
+    width: 36px;
+    height: 36px;
+    padding: 2px;
+    transform: translate(-50%, -50%);
+    transform-origin: center ;
+    cursor: pointer;
+}
+
+.input_icon:hover{
+    border-radius:50% ;
+}
+
+.form_acciones{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    color: var(--secondary);
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.form_acciones a {
+    color: var(--secondary);
+    font-weight: 600;
+    text-decoration: none;
+}
+.form_acciones a:hover{
+    text-decoration: underline;
+}
+
+.form_fila{
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+}
